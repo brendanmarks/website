@@ -64,7 +64,6 @@ class App extends Component {
                 <span className="section-subtitle">
                   <nobr>I am fluent in: </nobr>
                 </span>
-                <span> Python </span>
                 <span className="element"> Python </span>
                 <span className="element"> JavaScript </span>
                 <span className="element"> HTML </span>
