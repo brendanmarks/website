@@ -1,0 +1,204 @@
+.round-headshot {
+  width: 250px;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+.about-me-section {
+  padding-top: 70px;
+}
+
+.button {
+  width: 100px;
+  height: 20px;
+  color: #1c76e5;
+  background-color: transparent;
+  border: 1px #1c76e5 solid;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: rgba(28, 118, 229, 0.1);
+  text-decoration: none;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10% 30px 10%;
+}
+
+.section > * {
+  margin: 20px 0px;
+}
+
+.lists {
+  display: flex;
+}
+
+.off-white {
+  background-color: #f5f5f5;
+}
+
+.section > p {
+  max-width: 1000px;
+}
+
+.section > p > span {
+  font-weight: 500;
+}
+
+.sectionTitle {
+  text-align: center;
+  line-height: 0.1em;
+  padding-bottom: 30px;
+  padding-top: 0px;
+  font-weight: 500;
+  font-size: 1.6em;
+}
+
+.sectionTitle span:before,
+.sectionTitle span:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  border-bottom: 2px solid black;
+  top: 0;
+  width: 50px;
+}
+
+.sectionTitle span {
+  display: inline-block;
+  position: relative;
+}
+
+.sectionTitle span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.sectionTitle span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.sectionTitle span {
+  padding: 0 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #1c76e5;
+}
+
+.element:before {
+  content: "\2022";
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.email {
+  color: #1c76e5;
+}
+
+.connections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+}
+
+.connections > * {
+  margin: 0px 25px;
+}
+
+.fadeIn {
+  animation-name: slide-up;
+  animation-duration: 6s;
+}
+
+.fadeInButton {
+  animation-name: slide-up-button;
+  animation-duration: 6s;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up-button {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-me-section {
+    padding-top: 120px;
+  }
+  .anchor {
+    top: -120px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .about-me-section {
+    padding-top: 143px;
+  }
+  .anchor {
+    top: -143px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    padding: 30px 5%;
+  }
+  .sectionTitle span {
+    font-size: 0.7em;
+  }
+  .sectionTitle span {
+    padding: 0 0px !important;
+  }
+
+  .sectionTitle span:before,
+  .sectionTitle span:after {
+    width: 20px;
+  }
+
+  .sectionTitle span:before {
+    margin-right: 10px !important;
+  }
+  .sectionTitle span:after {
+    margin-left: 10px !important;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+}
